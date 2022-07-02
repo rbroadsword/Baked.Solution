@@ -4,9 +4,13 @@ using Baked.Models;
 namespace Baked.Tests
 {
   [TestClass]
-  public class ItemTests
+  public class PastryOrderTests
   {
     [TestMethod]
-    
+    public void PastryConstructor_CreatePastryOrder_PastryOrder()
+    {
+      PastryOrder myPastryorder = new PastryOrder(); 
+      Assert.AreEqual(typeof(PastryOrder), myPastryOrder.GetType()); 
+    }
   }
 }
