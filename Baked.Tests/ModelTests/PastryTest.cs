@@ -19,5 +19,12 @@ namespace Baked.Tests
         PastryOrder myPastryOrder = new PastryOrder(1); 
         Assert.AreEqual(2, myPastryOrder.PastryCost(1)); 
       }
+
+    [TestMethod]
+    public void PastryCost_IncorporateDeal_5()
+    {
+      PastryOrder myPastryOrder = new PastryOrder(3);
+      Assert.AreEqual(5, myPastryOrder.PastryCost(3));
+    }
   }
 }
