@@ -24,7 +24,7 @@ namespace Baked.Tests
     public void BreadCost_IncorporateDeal_10()
     {
       BreadOrder myBreadOrder = new BreadOrder(3); 
-      Assert.AreEqual(10, myBreadOrder.BreadCost(3))
+      Assert.AreEqual(10, myBreadOrder.BreadCost(3)); 
     }
   }
 }
