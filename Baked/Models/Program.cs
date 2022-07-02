@@ -26,11 +26,13 @@ namespace Baked {
       if (order == "Y" || order == "y")
       {
         Console.WriteLine("   How many loaves of bread would you like?"); 
-        string breadOrder = Console.ReadLine(); 
+        string stringBreadOrder = Console.ReadLine();
+        int intBreadOrder = int.Parse(stringBreadOrder); 
         Console.WriteLine("   How many pastry would you like?"); 
-        string pastryOrder = Console.ReadLine(); 
-        Console.WriteLine("   You have ordered " + breadOrder + " loaves of bread"); 
-        Console.WriteLine("   You have ordered " + pastryOrder + " pastries"); 
+        string stringPastryOrder = Console.ReadLine();
+        int intPastryOrder = int.Parse(stringPastryOrder); 
+        Console.WriteLine("   You have ordered " + intBreadOrder + " loaves of bread"); 
+        Console.WriteLine("   You have ordered " + intPastryOrder + " pastries"); 
 
       } else 
       {
