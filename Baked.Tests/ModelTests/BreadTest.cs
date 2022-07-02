@@ -12,5 +12,12 @@ namespace Baked.Tests
       BreadOrder myBreadOrder = new BreadOrder(2); 
       Assert.AreEqual(typeof(BreadOrder), myBreadOrder.GetType()); 
     }
+    
+    [TestMethod]
+    public void BreadCost_FindBreadOrderTotal_5()
+    {
+      BreadOrder myBreadOrder = new BreadOrder(1); 
+      Assert.AreEqual(5, myBreadOrder.BreadCost(1)); 
+    }
   }
 }
