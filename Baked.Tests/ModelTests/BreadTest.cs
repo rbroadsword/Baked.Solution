@@ -19,5 +19,12 @@ namespace Baked.Tests
       BreadOrder myBreadOrder = new BreadOrder(1); 
       Assert.AreEqual(5, myBreadOrder.BreadCost(1)); 
     }
+
+    [TestMethod]
+    public void BreadCost_IncorporateDeal_10()
+    {
+      BreadOrder myBreadOrder = new BreadOrder(3); 
+      Assert.AreEqual(10, myBreadOrder.BreadCost(3))
+    }
   }
 }
