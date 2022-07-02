@@ -10,6 +10,7 @@ namespace Baked {
     {
       Console.WriteLine("   Welcome To Pierre's Bakery"); 
       Console.WriteLine("            Menu      "); 
+      Console.WriteLine("          --------      "); 
       Console.WriteLine("           Bread:         "); 
       Console.WriteLine("   Single:  $5           "); 
       Console.WriteLine("   Double:  $10          "); 
