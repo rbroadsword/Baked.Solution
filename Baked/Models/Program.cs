@@ -31,8 +31,12 @@ namespace Baked {
         Console.WriteLine("   How many pastry would you like?"); 
         string stringPastryOrder = Console.ReadLine();
         int intPastryOrder = int.Parse(stringPastryOrder); 
-        Console.WriteLine("   You have ordered " + intBreadOrder + " loaves of bread"); 
-        Console.WriteLine("   You have ordered " + intPastryOrder + " pastries"); 
+        Console.WriteLine("   Your order: "); 
+        Console.WriteLine(intBreadOrder + "Steaming, piping fresh hot bread loaves!"); 
+        Console.WriteLine(intPastryOrder + "Oooey goooey  delectible pastry"); 
+        PastryOrder currentPastryOrder = new PastryOrder(intPastryOrder); 
+        BreadOrder currentBreadOrder = new BreadOrder(intBreadOrder); 
+        Console.WriteLine("  Your order total is: " + (currentPastryOrder.PastryCost(intPastryOrder) + currentBreadOrder.BreadCost(intBreadOrder))); 
 
       } else 
       {
