@@ -12,5 +12,12 @@ namespace Baked.Tests
       PastryOrder myPastryOrder = new PastryOrder(2); 
       Assert.AreEqual(typeof(PastryOrder), myPastryOrder.GetType()); 
     }
+
+    [TestMethod]
+    public void PastryCost_FindPastryOrderTotal_2()
+      {
+        PastryOrder myPastryOrder = new PastryOrder(1); 
+        Assert.AreEqual(2, myPastryOrder.PastryCost(1)); 
+      }
   }
 }
