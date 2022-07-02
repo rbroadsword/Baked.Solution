@@ -9,7 +9,7 @@ namespace Baked.Tests
     [TestMethod]
     public void PastryConstructor_CreatePastryOrder_PastryOrder()
     {
-      PastryOrder myPastryorder = new PastryOrder(); 
+      PastryOrder myPastryOrder = new PastryOrder(2); 
       Assert.AreEqual(typeof(PastryOrder), myPastryOrder.GetType()); 
     }
   }
