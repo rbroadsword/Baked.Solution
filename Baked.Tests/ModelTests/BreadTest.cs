@@ -26,5 +26,12 @@ namespace Baked.Tests
       BreadOrder myBreadOrder = new BreadOrder(3); 
       Assert.AreEqual(10, myBreadOrder.BreadCost(3)); 
     }
+
+    [TestMethod]
+    public void BreadCost_BigBallerOrder_25()
+    {
+      BreadOrder myBreadOrder = new BreadOrder(7); 
+      Assert.AreEqual(25, myBreadOrder.BreadCost(7)); 
+    }
   }
 }
