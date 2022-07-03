@@ -8,7 +8,7 @@ namespace Baked {
 
     public static void Main()
     {
-      Console.WriteLine("   Welcome To Pierre's Bakery"); 
+      Console.WriteLine("  Kornbread the Snack's Shack "); 
       Console.WriteLine("            Menu      "); 
       Console.WriteLine("          --------      "); 
       Console.WriteLine("           Bread:         "); 
@@ -33,14 +33,14 @@ namespace Baked {
         int intPastryOrder = int.Parse(stringPastryOrder); 
         Console.WriteLine("   Your order: "); 
         Console.WriteLine(intBreadOrder + "Steaming, piping fresh hot bread loaves!"); 
-        Console.WriteLine(intPastryOrder + "Oooey goooey  delectible pastry"); 
+        Console.WriteLine(intPastryOrder + "Oooey goooey delectible pastry"); 
         PastryOrder currentPastryOrder = new PastryOrder(intPastryOrder); 
         BreadOrder currentBreadOrder = new BreadOrder(intBreadOrder); 
         Console.WriteLine("  Your order total is: " + (currentPastryOrder.PastryCost(intPastryOrder) + currentBreadOrder.BreadCost(intBreadOrder))); 
 
       } else 
       {
-        Console.WriteLine("See you soon"); 
+        Console.WriteLine("Heeney this ain't no Olive Garden, purchase some bread or move along."); 
       }
     }
   }
