@@ -15,9 +15,12 @@ namespace Baked.Models
     public int PastryCost(int numberOfPastry)
     {
       int pastryTotal = 0; 
-      if (numberOfPastry >= 3)
+      if (numberOfPastry == 6)
       {
-        pastryTotal = numberOfPastry * 2 -1; 
+        pastryTotal = numberOfPastry * 2 -2; 
+      } else if (numberOfPastry >= 3) 
+      {
+        pastryTotal = numberOfPastry * 2 -1;
       } else 
       {
         pastryTotal = numberOfPastry *2; 

@@ -32,8 +32,8 @@ namespace Baked {
         string stringPastryOrder = Console.ReadLine();
         int intPastryOrder = int.Parse(stringPastryOrder); 
         Console.WriteLine("   Your order: "); 
-        Console.WriteLine(intBreadOrder + "Steaming, piping fresh hot bread loaves!"); 
-        Console.WriteLine(intPastryOrder + "Oooey goooey delectible pastry"); 
+        Console.WriteLine(intBreadOrder + " Steaming, piping fresh hot bread loaves!"); 
+        Console.WriteLine(intPastryOrder + " Oooey goooey delectible pastry"); 
         PastryOrder currentPastryOrder = new PastryOrder(intPastryOrder); 
         BreadOrder currentBreadOrder = new BreadOrder(intBreadOrder); 
         Console.WriteLine("  Your order total is: " + (currentPastryOrder.PastryCost(intPastryOrder) + currentBreadOrder.BreadCost(intBreadOrder))); 
