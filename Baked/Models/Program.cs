@@ -36,7 +36,7 @@ namespace Baked {
         Console.WriteLine(intPastryOrder + " Oooey goooey delectible pastry"); 
         PastryOrder currentPastryOrder = new PastryOrder(intPastryOrder); 
         BreadOrder currentBreadOrder = new BreadOrder(intBreadOrder); 
-        Console.WriteLine("  Your order total is: " + (currentPastryOrder.PastryCost(intPastryOrder) + currentBreadOrder.BreadCost(intBreadOrder))); 
+        Console.WriteLine("  Hand over the coin: " + (currentPastryOrder.PastryCost(intPastryOrder) + currentBreadOrder.BreadCost(intBreadOrder)) + "$"); 
 
       } else 
       {
